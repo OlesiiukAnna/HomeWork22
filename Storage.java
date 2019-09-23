@@ -2,7 +2,6 @@ package home.Task_22;
 
 import home.Task_22.model.User;
 
-import java.sql.SQLException;
 import java.util.List;
 
 public interface Storage {
@@ -20,4 +19,3 @@ public interface Storage {
 
     List<User> getAllUsers();
 }
-

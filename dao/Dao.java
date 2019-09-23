@@ -48,7 +48,7 @@ public class Dao implements Storage {
     @Override
     public void removeUser(int id) {
         try {
-            String request = String.format("DELETE FROM users WHERE id=?");
+            String request = "DELETE FROM users WHERE id=?";
             PreparedStatement statement = connection.prepareStatement(request);
             statement.setInt(1, id);
             statement.executeUpdate();
